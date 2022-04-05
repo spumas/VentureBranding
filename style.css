@@ -157,7 +157,7 @@ main {
 
 .contact-offer {
     background-color: var(--primary-color);
-    height: 120px;
+    min-height: 120px;
     max-width: 1000px;
     width: 100%;
     min-width: 1000px;
@@ -210,9 +210,19 @@ main {
 
     .contact-offer {
         flex-direction: column;
-        max-width: 200px;
-        width: 200px;
+        max-width: 400px;
+        min-width: 200px;
+        margin: 50px 35px 50px 35px;
     }
+
+    .contact-offer h2 {
+        padding: 25px 0;
+    }
+
+    .contact-button {
+        margin: 0px 0px 25px 0px;
+    }
+    
 
 }
 
@@ -228,9 +238,5 @@ main {
         text-shadow: 0px 0px 30px #9c1aff8a;
         white-space: nowrap;
         padding-left: 33px;
-    }
-
-    .title-text {
-        font-size: 30px;
     }
   }
