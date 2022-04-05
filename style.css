@@ -52,6 +52,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-color: #161616;
+    background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 .outer-wrap {
@@ -113,21 +115,58 @@ header h1 {
 .title-area {
     height: 600px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
 }
 
 .title-image {
-    background-color: #2b2b2b;
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 100px #9c1aff34;
+    margin-left: -150px;
 }
 
 .title-text {
-    font-size: 40px;
+    font-size: 50px;
     max-width: 600px;
     letter-spacing: 0.5px;
+    margin-left: -150px;
 }
+
+span {
+    color: #ac3eff;
+}
+
+@media only screen and (max-width: 1000px) {
+    .title-area {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .title-image, .title-text {
+        margin: 0;
+        margin-top: -80px;
+    }
+
+    .title-image img {
+        height: 500px;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+    
+    .logo {
+      height: 70px;
+      margin-top: 18px;
+    }
+
+    header h1 {
+        font-size: 30px;
+        text-shadow: 0px 0px 30px #9c1aff8a;
+        white-space: nowrap;
+        padding-left: 33px;
+    }
+
+    .title-text {
+        font-size: 30px;
+    }
+  }
