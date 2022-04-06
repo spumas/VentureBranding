@@ -165,7 +165,7 @@ main {
     max-width: 1000px;
     width: 100vw;
     min-width: 1000px;
-    border-radius: 18px;
+    border-radius: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -182,6 +182,7 @@ main {
 .contact-offer h2 {
     font-size: 35px;
     margin-left: 35px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.342);
 }
 
 .contact-button h3 {
@@ -198,7 +199,7 @@ main {
     margin-right: 35px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.541);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.342);
 }
 
 .arrow-down {
@@ -325,14 +326,18 @@ main {
     .logo {
       height: 70px;
       margin-top: 18px;
-      padding-right: 30px;
+      padding-right: 20px;
+    }
+
+    header {
+        padding-top: 0px;
     }
 
     header h1 {
         font-size: 30px;
         text-shadow: 0px 0px 30px #9c1aff8a;
         white-space: nowrap;
-        padding-left: 33px;
+        padding-left: 20px;
     }
 
     .contact-offer h2 {
@@ -344,7 +349,7 @@ main {
     .contact-offer {
         margin-top: -30px;
         margin-bottom: -80px;
-        padding: 0 20px;
+        padding: 0 22px;
     }
 
     .arrow-down {
