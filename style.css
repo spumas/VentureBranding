@@ -63,6 +63,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .inner-wrap {
@@ -269,13 +270,16 @@ main {
 
     .contact-offer {
         flex-direction: column;
-        max-width: 400px;
+        max-width: 600px;
         min-width: 200px;
         margin: 50px 35px 50px 35px;
     }
 
     .contact-offer h2 {
         padding: 25px 0;
+        text-align: center;
+        margin: 0 25px;
+
     }
 
     .contact-button {
@@ -299,13 +303,27 @@ main {
     .introduction-text {
         margin: 25px 25px 100px 25px;
     }
+
+    .arrow-down {
+        margin-top: -50px;
+    }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
     
-     .logo {
+    .title-image {
+        margin-top: -120px;
+    }
+    
+    .title-text {
+        font-size: 35px;
+        margin: -55px 25px 0px 25px;
+    } 
+    
+    .logo {
       height: 70px;
       margin-top: 18px;
+      padding-right: 20px;
     }
 
     header h1 {
@@ -314,10 +332,38 @@ main {
         white-space: nowrap;
         padding-left: 33px;
     }
+
+    .contact-offer h2 {
+        font-size: 25px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .contact-offer {
+        margin-top: -30px;
+        margin-bottom: -80px;
+        padding: 0 20px;
+    }
+
+    .arrow-down {
+        margin-bottom: -30px;
+        margin-top: 25px;
+    }
+
+    .introduction-text {
+        font-size: 35px;
+    }
 }
 
-  @media only screen and (min-width: 1601px) {
+@media only screen and (max-width: 350px) {
+    .title-text {
+        margin-bottom: +100px;
+    }
+}
+
+
+@media only screen and (min-width: 1601px) {
       .introduction-area {
-          border-radius: 25px;
+          border-radius: 55px;
       }
-  }
+}
