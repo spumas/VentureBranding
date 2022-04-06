@@ -134,7 +134,7 @@ main h2 {
 }
 
 .title-image {
-    margin-left: -150px;
+    margin-left: -100px;
 }
 
 .title-text {
@@ -142,9 +142,10 @@ main h2 {
     max-width: 600px;
     letter-spacing: 0.5px;
     margin-left: -150px;
+    margin-right: 50px;
 }
 
-span {
+.title-text span {
     color: #ac3eff;
 }
 
@@ -153,18 +154,26 @@ main {
     height: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .contact-offer {
     background-color: var(--primary-color);
     min-height: 120px;
     max-width: 1000px;
-    width: 100%;
+    width: 100vw;
     min-width: 1000px;
     border-radius: 18px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+.offer-section {
+    display: flex;
+    min-height: 120px;
+    justify-content: center;
     align-items: center;
 }
 
@@ -190,7 +199,57 @@ main {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.541);
 }
 
+.arrow-down {
+    width: 100%;
+    min-height: 200px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items:center
+}
 
+.introduction-area {
+    min-height: 500px;
+    max-height: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/introductionbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.avatar-circle {
+    height: 250px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.introduction-text span h2 {
+    color: #c3ff1f;
+}
+
+.introduction-text {
+    font-size: 40px;
+    max-width: 800px;
+    text-shadow: 0 0 45px rgba(0, 0, 0, 0.301);
+    margin-right: 50px;
+}
+
+.introduction-arrow {
+    height: 50px;
+    width: 50px;
+    margin-right: 25px;
+}
+
+.introduction-arrow i {
+    color: white;
+}
+
+.services-section {
+    min-height: 600px;
+}
 
 
 @media only screen and (max-width: 1000px) {
@@ -223,7 +282,23 @@ main {
         margin: 0px 0px 25px 0px;
     }
     
+    .introduction-area {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .introduction-arrow i {
+        transform: rotate(90deg);
+        margin-left: 25px;
+    }
+
+    .avatar-circle {
+        margin: 100px 0 50px 0
+    }
+
+    .introduction-text {
+        margin: 25px 25px 100px 25px;
+    }
 }
 
 @media only screen and (max-width: 550px) {
@@ -239,4 +314,10 @@ main {
         white-space: nowrap;
         padding-left: 33px;
     }
+}
+
+  @media only screen and (min-width: 1601px) {
+      .introduction-area {
+          border-radius: 25px;
+      }
   }
